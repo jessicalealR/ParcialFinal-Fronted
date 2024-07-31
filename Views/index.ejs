@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Consultar Prácticas de Docente</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5">Consultar Prácticas de Docente</h1>
+    <form action="/practices/teacher" method="post" class="mb-5">
+      <div class="form-group">
+        <label for="teacherId">Número de Identificación del Docente:</label>
+        <input type="text" id="teacherId" name="teacherId" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Consultar</button>
+    </form>
+
+    <h1 class="mt-5">Consultar Estudiantes por Práctica</h1>
+    <form action="/students/practice" method="post" class="mb-5">
+      <div class="form-group">
+        <label for="practiceId">ID de la Práctica:</label>
+        <input type="text" id="practiceId" name="practiceId" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Consultar</button>
+    </form>
+
+    <h1 class="mt-5">Consultar Resumen de Prácticas</h1>
+    <form action="/practices/summary" method="post" class="mb-5">
+      <div class="form-group">
+        <label for="academicPeriod">Periodo Académico:</label>
+        <input type="text" id="academicPeriod" name="academicPeriod" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Consultar</button>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
